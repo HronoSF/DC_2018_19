@@ -4,7 +4,7 @@ Keras==2.2.4
 numpy==1.16.4
 regex==2019.12.9
 tensorflow==1.13.2
-nltk==3.4.4
+nltk==3.4.5
 matplotlib==3.0.1
 
 
