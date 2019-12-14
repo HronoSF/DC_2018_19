@@ -1,0 +1,11 @@
+Flask==1.1.1
+Flask-Cors==3.0.8
+Keras==2.2.4
+numpy==1.16.4
+regex==2019.12.9
+tensorflow==1.13.2
+nltk==3.4.4
+matplotlib==3.0.1
+
+
+

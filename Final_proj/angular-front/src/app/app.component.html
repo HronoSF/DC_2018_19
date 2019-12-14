@@ -1,0 +1,38 @@
+
+<div class="container">
+<div class="text-wrapper">
+    <label for="text-input" class="text-input__label">Insert your text here: </label>
+  <div class="input-group">
+    <input type="text" class="form-control" id="text-input" placeholder="Type something...." aria-describedby="basic-addon2" [(ngModel)]="textInput">
+    <div class="input-group-btn">
+      <button class="btn btn-outline-primary btn-primary " type="button" (focus)="hideImg()" (click)="sendText(textInput)">Find Out!</button>
+    </div>
+  </div>
+</div>
+
+<form class="md-form ">
+  <div class="file-wrapper">
+  <label for="file-input" class="uplode-file-lable">Or you can upload file:</label>
+  </div>
+  <div class="file-field" id="file-input">
+      <label for="upload" class="file-field__label" (click)="hideImg()">Choose file</label>
+      <input type="file" class="file-field__upload" id="upload"  (change)="sendFile($event)">
+  </div>
+</form>
+
+  <div class="predicted-text-field" *ngIf = "response">
+    <div *ngFor=" let word of response">
+      <div class="tag" data-title="{{word.tag}}">
+        <p class="text-result" [ngClass]="{
+        'org-color': word.tag === 'ORG',
+      'loc-color': word.tag ==='LOC',
+      'per-color': word.tag === 'PER'
+      }">{{word.word}}</p></div><p class="text-result"> &nbsp; </p>
+    </div>
+  </div>
+</div>
+
+<div class="image-container" *ngIf="imgShow && plot">
+  <img [src]="plot" *ngIf="imgShow && plot" alt="bla bla" class="plot-image">
+</div>
+<mat-spinner class="spinner mat-spinner-color"  [style.display]="loading ? 'inline' : 'none'"></mat-spinner>

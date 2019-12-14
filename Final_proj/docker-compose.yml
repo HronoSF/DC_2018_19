@@ -1,0 +1,19 @@
+version: "3.1"
+services:
+   flask-back:
+    container_name: flask-back
+    build:
+      dockerfile: .Dockerfile
+      context: ./flask-back/
+    ports:
+     - 5000:5000
+    restart: on-failure
+   angular-front:
+     container_name: angular-front
+     build:
+       dockerfile: .Dockerfile
+       context: ./angular-front/
+     ports:
+       - 4200:4200
+     restart: on-failure
+  

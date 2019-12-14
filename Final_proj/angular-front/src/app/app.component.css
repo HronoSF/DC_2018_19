@@ -1,0 +1,124 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body{
+  color: rgba(0,6,14,0.86)!important;
+  background-color: blanchedalmond!important;
+}
+
+.loc-color{
+  color: #055305;
+}
+
+.per-color{
+  color: chocolate;
+}
+
+.org-color{
+  color: darkred;
+}
+
+.text-result{
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.upload-file-button{
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+.file-field{
+  position:relative;
+  width: 100px;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: tomato;
+}
+
+.file-field__upload{
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  opacity: 0;
+}
+
+.file-field__label{
+  cursor: pointer;
+  display: inline-block;
+  /*border: 1px solid #B8CDF9;*/
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+
+.file-field__upload:focus + .file-field, .file-field:hover{
+  box-shadow: 0 1px 3px #B8CDF9;
+  /*background-color: #B8CDF9;*/
+}
+
+.uplode-file-lable{
+  padding-left: 15px;
+  font-size: 15px;
+  margin-bottom: 13px;
+  margin-top: 13px;
+}
+
+.text-wrapper{
+  padding-top: 20px;
+}
+.file-wrapper{
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height:100%;
+  width: 180px;
+}
+
+.tag{
+  cursor: pointer;
+}
+
+.tag:hover::after {
+  content: attr(data-title);
+}
+
+.predicted-text-field{
+  margin-top: 30px;
+}
+
+.text-input__label{
+  font-size: 25px;
+}
+
+.spinner{
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1001;
+}
+
+.mat-spinner-color::ng-deep circle{
+  stroke: #337ab7 !important;
+}
+
+.image-container{
+  margin-top: 20px;
+  margin-left: 38.5%;
+  margin-right: auto;
+  height: 450px;
+  width: 551px;
+  position: relative;
+}
+
+.image-container>img{
+  height: 300px;
+  width: 451px;
+}
