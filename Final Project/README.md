@@ -15,7 +15,7 @@
 >> #### IF YOU HAVE STRONG DEVICE - INCREASE NUMBERS OF EPOCHS AND PLAY WITH HYPER PARAMS </br> TO GET BETTER PREDICTION RESULT (EPOCHS = 200 , BATCH_SIZE = 750 , FOR EXAMPLE) 
 >> As model was choosen classic for this type of NLP problems model - ***Bidirectional LSTM-CRF*** ([look here](https://arxiv.org/pdf/1508.01991v1.pdf)): 
 >> ![alt text](https://github.com/HronoSF/DC_2018_19/blob/master/Final%20Project/pictures/Screenshot%20from%202019-12-21%2015-47-38.png)</br>
-python >> Here you can see result of training on 5 epochs and data set of 200.000 sentences:</br>
+>> Here you can see result of training on 5 epochs and data set of 200.000 sentences:</br>
 ![alt text](https://github.com/HronoSF/DC_2018_19/blob/master/Final%20Project/pictures/results.png)
 >>> ## Possibility model improvemets: ###
 >>>***1)*** use an embedding layer for POS tags concatenated with word embeddings:</br>
