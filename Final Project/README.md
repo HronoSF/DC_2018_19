@@ -1,9 +1,9 @@
 ## Simplest Russian NRE (Flask+Angular+Docker Compose).Tags: ORG,LOC,PER
 
 ## To Run:
-1. in project folder input:   ***sudo docker-compose up --build*** <br>
-2. go to http://localhost:4200/
-3. try it!
+1. In project folder input:   ***sudo docker-compose up --build*** <br>
+2. Go to http://localhost:4200/
+3. Try it!
 
 > ## About:
 > As basis was taken "Lenta.ru" + "DeepPavlov BERT NER" ([data set here](https://drive.google.com/file/d/1JjabV7ESASYgEz28E8LqENE-It0CRVnA/view?usp=sharing)) in json lines format (jsonl) data sets which shape in common is about 740.000 sentences.Every sentence looks like:</br>
