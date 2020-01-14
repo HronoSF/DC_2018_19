@@ -6,8 +6,7 @@ import string
 from flask import Flask, request, redirect, url_for, jsonify
 from flask_cors import CORS
 
-from services.predictions_service import get_tags_to_str_input,get_tags_to_file_input
-
+from services.functional import *
 UPLOAD_FOLDER = 'uploaded/'
 
 if not(os.path.exists(UPLOAD_FOLDER)):

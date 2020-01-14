@@ -111,7 +111,7 @@ body{
 
 .image-container{
   margin-top: 20px;
-  margin-left: 38.5%;
+  margin-left: 25.5%;
   margin-right: auto;
   height: 450px;
   width: 551px;
@@ -119,6 +119,6 @@ body{
 }
 
 .image-container>img{
-  height: 300px;
-  width: 451px;
+  height: 489px;
+  width: 780px;
 }
