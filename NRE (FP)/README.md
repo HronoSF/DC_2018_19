@@ -31,6 +31,6 @@
 >>>
 >>>model = Bidirectional(LSTM(units=50, return_sequences=True,recurrent_dropout=0.1))(model)
 > ## If you want learn model on full data set and use it, you need to do: ###
-> 1. Preprocess all data set,train model and save it.You can do it in [this notebook](https://github.com/HronoSF/DC_2018_19/blob/master/Final%20Project/NER.ipynb)
-> 2. Get saved files and put each in [resources folder in backend](https://github.com/HronoSF/DC_2018_19/tree/master/Final%20Project/flask-back/resources)
+> 1. Preprocess all data set,train model and save it.You can do it in [this notebook](https://github.com/HronoSF/DCIR_2018_19/blob/master/NRE%20(FP)/NER.ipynb)
+> 2. Get saved files and put each in [resources folder in backend](https://github.com/HronoSF/DCIR_2018_19/tree/master/NRE%20(FP)/flask-back/resources)
 > 3. Restart and rebuild backend docker container ( ***sudo docker-compose up flask-back --build*** or run application again as described upper)
