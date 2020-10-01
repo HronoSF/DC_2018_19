@@ -7,16 +7,16 @@
 
 > ## About:
 > As basis was taken "Lenta.ru" + "DeepPavlov BERT NER" ([data set here](https://drive.google.com/file/d/1JjabV7ESASYgEz28E8LqENE-It0CRVnA/view?usp=sharing)) in json lines format (jsonl) data sets which shape in common is about 740.000 sentences.Every sentence looks like:</br>
-> ![alt_text](https://github.com/HronoSF/DCIR_2018_19/blob/master/NRE%20(FP)/pictures/common_look_jsonl.jpg)</br>
+> ![alt_text](https://github.com/HronoSF/DCIR_2018_19/blob/master/NER/pictures/common_look_jsonl.jpg)</br>
 > Than it was transformated in csv with defined structure: 
 > #### sentence number -> word -> part of speach -> tag ####
-> ![alt text](https://github.com/HronoSF/DCIR_2018_19/blob/master/NRE%20(FP)/pictures/csv_structure.jpg)
+> ![alt text](https://github.com/HronoSF/DCIR_2018_19/blob/master/NER/pictures/csv_structure.jpg)
 >> ## Model: ##
 >> #### IF YOU HAVE STRONG DEVICE - INCREASE NUMBERS OF EPOCHS AND PLAY WITH HYPER PARAMS </br> TO GET BETTER PREDICTION RESULT (EPOCHS = 200 , BATCH_SIZE = 750 , FOR EXAMPLE) 
 >> As model was choosen classic for this type of NLP problems model - ***Bidirectional LSTM-CRF*** ([look here](https://arxiv.org/pdf/1508.01991v1.pdf)): 
->> ![alt text](https://github.com/HronoSF/DCIR_2018_19/blob/master/NRE%20(FP)/pictures/Screenshot%20from%202019-12-21%2015-47-38.png)</br>
+>> ![alt text](https://github.com/HronoSF/DCIR_2018_19/blob/master/NER/pictures/Screenshot%20from%202019-12-21%2015-47-38.png)</br>
 >> Here you can see result of training on 5 epochs and data set of 200.000 sentences:</br>
-![alt text](https://github.com/HronoSF/DCIR_2018_19/blob/master/NRE%20(FP)/pictures/results.png)
+![alt text](https://github.com/HronoSF/DCIR_2018_19/blob/master/NER/pictures/results.png)
 >>> ## Possibility model improvemets: ###
 >>>***1)*** use an embedding layer for POS tags concatenated with word embeddings:</br>
 >>>```python
