@@ -3,7 +3,7 @@ Flask-Cors==3.0.8
 Keras==2.2.4
 numpy==1.16.4
 regex==2019.12.9
-tensorflow==1.15.0
+tensorflow==2.5.3
 nltk==3.4.5
 matplotlib==3.0.1
 pandas==0.24.2
