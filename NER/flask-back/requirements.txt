@@ -1,5 +1,5 @@
 Flask==1.1.1
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 Keras==2.2.4
 numpy==1.16.4
 regex==2019.12.9
